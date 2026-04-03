@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAULWORX // SYNC ROSTER</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { background-color: #0A0A0A; color: #F2F2F2; font-family: 'Space Mono', monospace; padding: 40px; max-width: 800px; margin: 0 auto; }
+        .header { border-bottom: 1px solid #333; padding-bottom: 20px; margin-bottom: 40px; }
+        .logo { color: #FF4F00; font-weight: 700; font-size: 14px; letter-spacing: 0.1em; }
+        h1 { font-size: 24px; font-weight: 400; text-transform: uppercase; margin-top: 10px; }
+        .track-container { border: 1px solid #222; padding: 20px; margin-bottom: 20px; background-color: #111; }
+        .track-title { font-size: 16px; font-weight: 700; margin-bottom: 15px; color: #F2F2F2; display: flex; justify-content: space-between; }
+        .track-tag { color: #888; font-weight: 400; font-size: 12px; }
+        audio { width: 100%; outline: none; filter: invert(90%) hue-rotate(180deg); /* Хак, чтобы стандартный плеер стал темным */ }
+        .legal { margin-top: 50px; font-size: 12px; color: #555; text-align: center; }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo">CONFIDENTIAL // 100% ONE-STOP</div>
+        <h1>Paulworx Archive: Sync Roster</h1>
+        <p style="font-size: 14px; color: #888;">Select audio artifacts curated for film, media, and architectural sound design. High-resolution STEMS available upon request.</p>
+    </div>
+
+    <!-- ТРЕК 1 -->
+    <div class="track-container">
+        <div class="track-title">
+            Paulworx_Tangomonk.mp3 
+            <span class="track-tag">[Study: Industrial Tension]</span>
+        </div>
+        <!-- В атрибуте src="..." впиши точное имя твоего загруженного mp3 файла -->
+        <input type="audio" controls controlsList="nodownload">
+            <source src="Paulworx_Tangomonk.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <!-- ТРЕК 2 -->
+    <div class="track-container">
+        <div class="track-title">
+            Paulworx_Fakecrime.mp3
+            <span class="track-tag">[Study: Ambient Texture]</span>
+        </div>
+        <audio controls controlsList="nodownload">
+            <source src="Paulworx_Fakecrime.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <div class="legal">
+        Direct licensing inquiries: p@paulworx.com <br>
+        © 2026 Paulworx. All rights reserved.
+    </div>
+
+</body>
+</html>
