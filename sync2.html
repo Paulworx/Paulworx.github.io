@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAULWORX // SYNC ROSTER</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { background-color: #0A0A0A; color: #F2F2F2; font-family: 'Space Mono', monospace; padding: 40px; max-width: 800px; margin: 0 auto; line-height: 1.5; }
+        .header { border-bottom: 1px solid #333; padding-bottom: 20px; margin-bottom: 40px; }
+        .logo { color: #FF4F00; font-weight: 700; font-size: 14px; letter-spacing: 0.1em; }
+        h1 { font-size: 24px; font-weight: 400; text-transform: uppercase; margin-top: 10px; }
+        
+        /* Дизайн закрытых папок (Категорий) */
+        details { margin-bottom: 15px; border: 1px solid #222; background-color: #0d0d0d; }
+        summary { padding: 15px 20px; font-weight: 700; color: #F2F2F2; cursor: pointer; text-transform: uppercase; list-style: none; transition: 0.3s; }
+        summary::-webkit-details-marker { display: none; } /* Убираем стандартный треугольник */
+        summary:hover { background-color: #1a1a1a; color: #FF4F00; }
+        
+        /* Содержимое внутри папки */
+        .folder-content { padding: 20px; border-top: 1px solid #222; background-color: #0A0A0A; }
+        
+        .track-container { margin-bottom: 20px; }
+        .track-container:last-child { margin-bottom: 0; }
+        .track-title { font-size: 15px; font-weight: 700; margin-bottom: 10px; display: flex; justify-content: space-between; align-items: baseline; }
+        .track-tag { color: #888; font-weight: 400; font-size: 11px; text-align: right; }
+        audio { width: 100%; height: 35px; outline: none; filter: invert(90%) hue-rotate(180deg); }
+        
+        .legal { margin-top: 60px; font-size: 11px; color: #555; text-align: center; border-top: 1px dashed #222; padding-top: 20px; }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo">CONFIDENTIAL // 100% ONE-STOP</div>
+        <h1>Paulworx Archive: Sync Roster</h1>
+        <p style="font-size: 13px; color: #888;">Select a directory below to access curated audio artifacts. Designed for cinematic, architectural, and visual integration. High-resolution STEMS available upon request.</p>
+    </div>
+
+    <details open>
+        <summary>[DIR_01] RHYTHMIC INERTIA (90s Boom-Bap / Instrumental) <span>+</span></summary>
+        <div class="folder-content">
+            
+            <div class="track-container">
+                <div class="track-title">
+                    Paulworx_Cowunder.mp3 <br>
+                    <span class="track-tag">[research: gritty boom-bap]</span>
+                </div>
+                <audio controls controlsList="nodownload"><source src="Paulworx_Cowunder.mp3" type="audio/mpeg"></audio>
+            </div>
+
+            <div class="track-container">
+                <div class="track-title">
+                    Paulworx_Fakecrime.mp3 <br>
+                    <span class="track-tag">[research: gritty boom-bap]]</span>
+                </div>
+                <audio controls controlsList="nodownload"><source src="Paulworx_Fakecrime.mp3" type="audio/mpeg"></audio>
+            </div>
+
+                      <div class="track-container">
+                <div class="track-title">
+                    Paulworx_Tangomonk.mp3 <br>
+                    <span class="track-tag">[research: gritty boom-bap]]</span>
+                </div>
+                <audio controls controlsList="nodownload"><source src="Paulworx_Tangomonk.mp3" type="audio/mpeg"></audio>
+            </div>
+
+        </div>
+    </details>
+
+    <!-- КАТЕГОРИЯ 2: CINEMATIC / EXPERIMENTAL -->
+    <details>
+        <summary>[DIR_02] SPATIAL TENSION (Cinematic / Avant-Garde / IDM) <span>+</span></summary>
+        <div class="folder-content">
+            
+            <div class="track-container">
+                <div class="track-title">
+                    PW_V-021: Glass Shatter <br>
+                    <span class="track-tag">[Object: Industrial Sound Art]</span>
+                </div>
+                <audio controls controlsList="nodownload"><source src="cinematic_track_01.mp3" type="audio/mpeg"></audio>
+            </div>
+
+            <div class="track-container">
+                <div class="track-title">
+                    PW_V-022: Deep Void <br>
+                    <span class="track-tag">[Study: Dark Ambient / Tension]</span>
+                </div>
+                <audio controls controlsList="nodownload"><source src="cinematic_track_02.mp3" type="audio/mpeg"></audio>
+            </div>
+
+        </div>
+    </details>
+
+    <!-- КАТЕГОРИЯ 3: SLAVIC DECONSTRUCTION -->
+    <details>
+        <summary>[DIR_03] PHONETIC RESONANCE (Vocal Textures / Melancholy) <span>+</span></summary>
+        <div class="folder-content">
+            
+            <div class="track-container">
+                <div class="track-title">
+                    PW_V-031: Winter Monolith <br>
+                    <span class="track-tag">[Study: Slavic Phonetics / Art Pop]</span>
+                </div>
+                <audio controls controlsList="nodownload"><source src="vocal_track_01.mp3" type="audio/mpeg"></audio>
+            </div>
+
+        </div>
+    </details>
+
+    <div class="legal">
+        Direct licensing & custom sound design inquiries: <a href="mailto:p@paulworx.com" style="color: #FF4F00; text-decoration: none;">p@paulworx.com</a><br>
+        © 2026 Paulworx. All rights reserved.
+    </div>
+
+</body>
+</html>
