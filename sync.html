@@ -6,29 +6,34 @@
     <title>PAULWORX ARCHIVE</title>
     <link rel="icon" type="image/png" href="favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body { background-color: #0A0A0A; color: #F2F2F2; font-family: 'Space Mono', monospace; padding: 40px; max-width: 800px; margin: 0 auto; line-height: 1.5; }
-        .header { border-bottom: 1px solid #333; padding-bottom: 20px; margin-bottom: 40px; }
-        .logo { color: #FF4F00; font-weight: 700; font-size: 14px; letter-spacing: 0.1em; }
-        h1 { font-size: 24px; font-weight: 400; text-transform: uppercase; margin-top: 10px; }
-        
-        /* Дизайн закрытых папок (Категорий) */
-        details { margin-bottom: 15px; border: 1px solid #222; background-color: #0d0d0d; }
-        summary { padding: 15px 20px; font-weight: 700; color: #F2F2F2; cursor: pointer; text-transform: uppercase; list-style: none; transition: 0.3s; }
-        summary::-webkit-details-marker { display: none; } /* Убираем стандартный треугольник */
-        summary:hover { background-color: #1a1a1a; color: #FF4F00; }
-        
-        /* Содержимое внутри папки */
-        .folder-content { padding: 20px; border-top: 1px solid #222; background-color: #0A0A0A; }
-        
-        .track-container { margin-bottom: 20px; }
-        .track-container:last-child { margin-bottom: 0; }
-        .track-title { font-size: 15px; font-weight: 700; margin-bottom: 10px; display: flex; justify-content: space-between; align-items: baseline; }
-        .track-tag { color: #888; font-weight: 400; font-size: 11px; text-align: right; }
-        audio { width: 100%; height: 35px; outline: none; filter: invert(90%) hue-rotate(180deg); }
-        
-        .legal { margin-top: 60px; font-size: 11px; color: #555; text-align: center; border-top: 1px dashed #222; padding-top: 20px; }
-    </style>
+<style>
+    body { background-color: #0A0A0A; color: #F2F2F2; font-family: 'Space Mono', monospace; padding: 20px; max-width: 800px; margin: 0 auto; line-height: 1.5; }
+    .header { border-bottom: 1px solid #333; padding-bottom: 20px; margin-bottom: 40px; }
+    .logo { color: #FF4F00; font-weight: 700; font-size: 14px; letter-spacing: 0.1em; }
+    h1 { font-size: 20px; font-weight: 400; text-transform: uppercase; margin-top: 10px; }
+    
+    details { margin-bottom: 15px; border: 1px solid #222; background-color: #0d0d0d; }
+    summary { padding: 15px; font-weight: 700; color: #F2F2F2; cursor: pointer; text-transform: uppercase; font-size: 13px; }
+    
+    .folder-content { padding: 15px; border-top: 1px solid #222; }
+    
+    .track-container { margin-bottom: 25px; }
+    
+    /* ВОТ ЗДЕСЬ МАГИЯ: НА ТЕЛЕФОНЕ ТЕКСТЫ СТАНУТ СТОЛБИКОМ */
+    .track-title { 
+        font-size: 14px; 
+        font-weight: 700; 
+        margin-bottom: 10px; 
+        display: flex; 
+        flex-direction: column; /* Текст и теги друг под другом */
+        gap: 5px; 
+    }
+    .track-tag { color: #FF4F00; font-weight: 400; font-size: 11px; }
+    
+    audio { width: 100%; height: 30px; outline: none; filter: invert(90%) hue-rotate(180deg); }
+    
+    .legal { margin-top: 40px; font-size: 10px; color: #555; text-align: center; border-top: 1px dashed #222; padding-top: 20px; }
+</style>
 </head>
 <body>
 
